@@ -1,0 +1,15 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Woolly Ally
+owner: Woolly Ally
+first_published: 2016 # if migrating another site, the year of your first publish
+email: your-email@domain.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.co" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+
