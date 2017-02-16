@@ -21,6 +21,8 @@ formEl.addEventListener("submit", function (e) {
   var request = new XMLHttpRequest();
 
   request.addEventListener("load", function () {
+      
+      console.log("test")
     if (request.status === 302) { // CloudCannon redirects on success
       // It worked
     }
