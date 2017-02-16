@@ -20,12 +20,8 @@ formEl.addEventListener("submit", function (e) {
 
   var request = new XMLHttpRequest();
 
-  request.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            debugger;
-            document.getElementById("demo").innerHTML = this.responseText;
-       }
-    };
+  
+  request.addEventListener("load", reqListener);
 
   request.open(formEl.method, formEl.action);
   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
