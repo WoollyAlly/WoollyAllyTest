@@ -1,4 +1,4 @@
 /*! Place your custom styles here */
-.modal-content{
+.modal-container .modal-content{
     overflow:auto;
 }
