@@ -20,8 +20,10 @@ formEl.addEventListener("submit", function (e) {
 
   var request = new XMLHttpRequest();
 
-  
-  request.addEventListener("load", reqListener);
+  request.addEventListener("load", function(){
+      console.log(this, "test");
+      debugger;
+  });
 
   request.open(formEl.method, formEl.action);
   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
