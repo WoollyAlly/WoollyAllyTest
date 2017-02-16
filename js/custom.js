@@ -20,12 +20,12 @@ formEl.addEventListener("submit", function (e) {
 
   var request = new XMLHttpRequest();
 
-  request.addEventListener("load", function () {
-      
-      console.log("test")
-    if (request.status === 302) { // CloudCannon redirects on success
-      // It worked
-    }
+  request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            debugger;
+            document.getElementById("demo").innerHTML = this.responseText;
+       }
+    };
   });
 
   request.open(formEl.method, formEl.action);
