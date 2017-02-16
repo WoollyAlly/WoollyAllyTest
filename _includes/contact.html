@@ -15,17 +15,18 @@
                             <!--<p class="lead">Subscribe to our monthly mailing list. Strictly useful articles and resources &mdash; no spam.</p>-->
                            
                             <form class="text-left form-email" method="post" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                <input type="hidden" name="_to" value="kkarich@yahoo.com">
                                 <div class="col-sm-6">
                                     <label>Your Name:</label>
-                                    <input type="text" name="Name" class="validate-required" />
+                                    <input type="text" name="name" class="validate-required" />
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Email Address:</label>
-                                    <input type="email" name="Email" class="validate-required validate-email" />
+                                    <input type="email" name="email" class="validate-required validate-email" />
                                 </div>
                                 <div class="col-sm-12">
                                     <label>Message:</label>
-                                    <textarea rows="3" name="Message" class="validate-required"></textarea>
+                                    <textarea rows="3" name="message" class="validate-required"></textarea>
                                 </div>
                                 <div class="col-sm-5 col-md-4">
                                     <button type="submit" class="btn btn--primary type--uppercase">Send</button>
