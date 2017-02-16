@@ -26,7 +26,6 @@ formEl.addEventListener("submit", function (e) {
             document.getElementById("demo").innerHTML = this.responseText;
        }
     };
-  });
 
   request.open(formEl.method, formEl.action);
   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
