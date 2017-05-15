@@ -17,7 +17,7 @@ defaults:
       path: ""
       type: "caseStudies"
     values:
-      layout: "staff-layout"
+      layout: "case-study"
 
 # Build settings
 markdown: kramdown
