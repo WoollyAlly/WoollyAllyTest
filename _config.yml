@@ -10,6 +10,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.co" # the base hostname & protocol for your site
 
 
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "caseStudies"
+    values:
+      layout: "staff-layout"
+
 # Build settings
 markdown: kramdown
 
