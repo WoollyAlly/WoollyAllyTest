@@ -15,7 +15,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "caseStudies"
+      type: "casestudies"
     values:
       layout: "case-study"
 
