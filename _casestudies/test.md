@@ -6,4 +6,6 @@ services:
   - Web Design
   - Photo
   - Video
+images:
+    - /img/bg-1.jpg
 ---
