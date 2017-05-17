@@ -25,9 +25,13 @@
                                                 <!--    A robust, multipurpose HTML template with<br class="hidden-xs hidden-sm"> over 250 interface blocks.-->
                                                 <!--</p>-->
                                             </div>
+                                            {% assign path_prefix = '/' %}
+                                            {% if page.url == "/" %}
+                                                {% assign path_prefix = '' %}
+                                            {% endif %}
                                             <ul class="menu-vertical">
                                                 <li class="h4">
-                                                    <a class="inner-link modal-close" href="#home">Home</a>
+                                                    <a class="inner-link modal-close" href= "{{path_prefix}}#home">Home</a>
                                                 </li>
                                                 <li class="h4">
                                                     <a class="inner-link modal-close" href="#services">Services</a>
