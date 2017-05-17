@@ -7,8 +7,8 @@ services:
   - Photo
   - Video
 images:
-  - image_path: /img/agency-1.jpg
-    title: Test Image
+  - image_path: /img/gbc.jpg
+    title: Gentle Birth Care Main Image
 ---
 
 
