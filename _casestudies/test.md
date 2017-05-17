@@ -7,5 +7,5 @@ services:
   - Photo
   - Video
 images:
-    - /img/bg-1.jpg
+    - image_path: /img/bg-1.jpg
 ---
