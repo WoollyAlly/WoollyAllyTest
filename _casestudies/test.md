@@ -1,5 +1,6 @@
 ---
 title: test
+description: This is the short description about them
 website_url: 'http://gentlebirthcare.com'
 services:
   - Web Design
