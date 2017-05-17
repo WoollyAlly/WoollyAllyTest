@@ -16,11 +16,11 @@
                     {% endif %}
                         <div class="col-sm-4">
                             <div class="feature feature-1">
-                                <img alt="Image" src="img/gbc.jpg" />
+                                <img alt="Image" src="{{casestudy.images[0].image_path}}" />
                                 <div class="feature__body boxed boxed--lg boxed--border">
-                                    <h3>Gentle Birth Care</h3>
+                                    <h3>{{casestudy.title}}</h3>
                                     <p class="lead">
-                                        Save time with a multitude of styled components designed to showcase your content
+                                        {{casestudy.description}}
                                     </p>
                                     <a href="#">
                                         Explore Project &rarr;
