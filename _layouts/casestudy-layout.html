@@ -80,15 +80,11 @@
                         <div class="col-sm-12">
                             <div class="slider" data-paging="true" data-arrows="true">
                                 <ul class="slides">
-                                    <li>
-                                        <img alt="Image" src="img/work-single-1.jpg" />
-                                    </li>
-                                    <li>
-                                        <img alt="Image" src="img/work-single-3.jpg" />
-                                    </li>
-                                    <li>
-                                        <img alt="Image" src="img/work-single-4.jpg" />
-                                    </li>
+                                    {% for image in page.images %}
+                                        <li>
+                                            <img alt="{{image.title}}" src="{{image.image_path}}" />
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
