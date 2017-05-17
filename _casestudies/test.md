@@ -8,6 +8,7 @@ services:
   - Video
 images:
   - image_path: /img/agency-1.jpg
+    title: 'test'
 ---
 
 
