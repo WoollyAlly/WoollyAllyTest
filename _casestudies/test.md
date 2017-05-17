@@ -1,7 +1,7 @@
 ---
 title: test
 description: test
-website_url: gentlebirthcare.com
+website_url: 'http://gentlebirthcare.com/'
 services:
   - Web Design
   - Photo
