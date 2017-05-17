@@ -8,7 +8,9 @@ services:
   - Video
 images:
   - image_path: /img/agency-1.jpg
-    title: 'test'
+    title: Test Image
+  - image_path: /img/gbc.jpg
+    title: GBC Image
 ---
 
 
