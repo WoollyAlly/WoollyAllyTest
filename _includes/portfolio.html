@@ -4,54 +4,35 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>Case Studies</h2>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="feature feature-1">
-                            <img alt="Image" src="img/gbc.jpg" />
-                            <div class="feature__body boxed boxed--lg boxed--border">
-                                <h3>Gentle Birth Care</h3>
-                                <p class="lead">
-                                    Save time with a multitude of styled components designed to showcase your content
-                                </p>
-                                <a href="#">
-                                    Explore Project &rarr;
-                                </a>
+                
+			    {% assign casestudies = site.casestudies | sort: "title" %}
+                {% for casestudy in casestudies %}
+                
+                    {% assign rowfinder = forloop.index | modulo: 3 %}
+		  
+		  
+				    {% if rowfinder == 1 %}
+                      <div class="row">
+                    {% endif %}
+                        <div class="col-sm-4">
+                            <div class="feature feature-1">
+                                <img alt="Image" src="img/gbc.jpg" />
+                                <div class="feature__body boxed boxed--lg boxed--border">
+                                    <h3>Gentle Birth Care</h3>
+                                    <p class="lead">
+                                        Save time with a multitude of styled components designed to showcase your content
+                                    </p>
+                                    <a href="#">
+                                        Explore Project &rarr;
+                                    </a>
+                                </div>
                             </div>
+                            <!--end feature-->
                         </div>
-                        <!--end feature-->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="feature feature-1">
-                            <img alt="Image" src="img/fusion.jpg" />
-                            <div class="feature__body boxed boxed--lg boxed--border">
-                                <h3>Fusion Salon</h3>
-                                <p class="lead">
-                                    Save time with a multitude of styled components designed to showcase your content
-                                </p>
-                                <a href="#">
-                                    Explore Project &rarr;
-                                </a>
-                            </div>
-                        </div>
-                        <!--end feature-->
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="feature feature-1">
-                            <img alt="Image" src="img/work-3.jpg" />
-                            <div class="feature__body boxed boxed--lg boxed--border">
-                                <h3>M&amp;S Stairs Co.</h3>
-                                <p class="lead">
-                                    Save time with a multitude of styled components designed to showcase your content
-                                </p>
-                                <a href="#">
-                                    Explore Project &rarr;
-                                </a>
-                            </div>
-                        </div>
-                        <!--end feature-->
-                    </div>
-                </div>
-                <!--end of row-->
+				    {% if rowfinder == 0 or forloop.length == forloop.index %}
+                      </div> 
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
         <!--end of row-->
