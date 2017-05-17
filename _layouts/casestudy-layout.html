@@ -63,10 +63,10 @@
                             <div class="text-block">
                                 <span class="h5">Services rendered:</span>
                                 <ul class="bullets">
-                                    <li>Branding</li>
-                                    <li>Print Collateral</li>
-                                    <li>Web Design</li>
-                                    <li>Digital Strategy</li>
+                                    
+                                {% for service in page.services %}
+                                    <li>{{service}}</li>
+                                {% endfor %}
                                 </ul>
                             </div>
                         </div>
