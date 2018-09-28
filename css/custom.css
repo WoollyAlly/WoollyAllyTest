@@ -18,7 +18,7 @@ img.circle{
 }
 
 .bg-wave {
-    background: url(img/bg-wave.png);
+    background: url(/img/bg-wave.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
