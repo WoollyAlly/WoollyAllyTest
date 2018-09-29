@@ -722,7 +722,7 @@ mr = (function (mr, $, window, document){
                         url: thisForm.attr('action'),
                         crossDomain: true,
                         data: thisForm.serialize(),
-                        method: "GET",
+                        method:thisForm.attr('method'),
                         cache: false,
                         dataType: 'json',
                         contentType: 'application/json; charset=utf-8',
