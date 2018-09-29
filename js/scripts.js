@@ -700,7 +700,7 @@ mr = (function (mr, $, window, document){
         thisForm.addClass('attempted-submit');
 
         // Do this if the form is intended to be submitted to MailChimp or Campaign Monitor
-        if (formAction.indexOf('createsend.com') !== -1 || formAction.indexOf('list-manage.com') !== -1 ) {
+        if (formAction.indexOf('createsend.com') !== -1 || formAction.indexOf('list-manage.com') !== -1 || formAction.indexOf('formspree.io') !== -1 ) {
 
             console.log('Mail list form signup detected.');
             if (typeof originalError !== typeof undefined && originalError !== false) {
@@ -722,7 +722,7 @@ mr = (function (mr, $, window, document){
                         url: thisForm.attr('action'),
                         crossDomain: true,
                         data: thisForm.serialize(),
-                        method: "GET",
+                        method: thisForm.attr('method'),
                         cache: false,
                         dataType: 'json',
                         contentType: 'application/json; charset=utf-8',
