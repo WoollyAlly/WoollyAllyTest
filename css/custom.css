@@ -27,3 +27,12 @@ img.circle{
     background-position: center bottom;
     background-size: contain;
 }
+
+.btn--alt {
+    background: #3CE2B4;
+    border-color: #00C891;
+}
+
+.btn--alt:hover {
+    background: #64EBC6;
+}
